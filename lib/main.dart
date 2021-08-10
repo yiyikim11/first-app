@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_app/game.dart';
 import 'package:flutter_app/info.dart';
 import 'package:flutter_app/read.dart';
 
@@ -39,9 +40,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     Read(),
-    Container(
-      child: Column(),
-    ),
+    Game(),
     Info(),
   ];
 
