@@ -15,11 +15,6 @@ class _GameState extends State<Game> {
         Container(
           child: Text('Gaming'),
         ),
-        Container(
-          child: Image(
-            image: AssetImage('image/gamings.png'),
-          ),
-        ),
       ],
     );
   }
