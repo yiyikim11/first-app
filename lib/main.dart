@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_app/game.dart';
 import 'package:flutter_app/info.dart';
 import 'package:flutter_app/read.dart';
+import 'package:get/get.dart';
 
 //Main is the starting point when we open the app
 
@@ -19,7 +20,10 @@ class MyApp extends StatelessWidget {
   static const String _title = 'BottomNavigationBar';
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        fontFamily: 'Itim',
+      ),
       title: _title,
       home: MyStatefulWidget(),
     );

@@ -15,7 +15,10 @@ class _QuizState extends State<Quiz> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         centerTitle: true,
-        title: Text('Quiz'),
+        title: Text(
+          'Quiz',
+          style: TextStyle(fontFamily: 'Itim'),
+        ),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -30,6 +33,7 @@ class _QuizState extends State<Quiz> {
           Text(
             'Global Warming Quiz',
             style: TextStyle(
+              fontFamily: 'Itim',
               fontSize: 30,
             ),
           ),
@@ -62,6 +66,7 @@ class _QuizState extends State<Quiz> {
                 child: Text(
                   'Start now',
                   style: TextStyle(
+                    fontFamily: 'Itim',
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),

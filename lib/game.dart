@@ -22,7 +22,10 @@ class _GameState extends State<Game> {
           child: Text(
             'Gaming',
             style: TextStyle(
-                color: Colors.green, fontWeight: FontWeight.bold, fontSize: 25),
+                fontFamily: 'Itim',
+                color: Colors.green,
+                fontWeight: FontWeight.bold,
+                fontSize: 25),
           ),
         ),
         Image.asset(
@@ -44,12 +47,20 @@ class _GameState extends State<Game> {
               child: Text(
                 'RecyclingP',
                 style: TextStyle(
+                  fontFamily: 'Itim',
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
             decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  blurRadius: 10,
+                  color: Colors.black,
+                  offset: Offset(1, 3),
+                ),
+              ],
               borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                 image: AssetImage('assets/images/plastic5.jpg'),
@@ -86,12 +97,20 @@ class _GameState extends State<Game> {
               child: Text(
                 'Quiz',
                 style: TextStyle(
+                  fontFamily: 'Itim',
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
             decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  blurRadius: 10,
+                  color: Colors.black,
+                  offset: Offset(1, 3),
+                ),
+              ],
               borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                 image: AssetImage('assets/images/plants2.jpg'),
